@@ -1,0 +1,22 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+ header{
+   margin-bottom: 30px;
+ }
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.my-container{
+  margin-left: 30px;
+}
+
+.ingredients-container > input {
+  margin: 0 15px 0 5px;
+}

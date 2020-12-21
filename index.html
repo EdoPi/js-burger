@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Create Your Burger</title>
+  </head>
+  <body>
+    <div class="my-container">
+      <header>
+        <h1>Create Your Burger</h1>
+      </header>
+
+      <main>
+        <label for="">Nome del tuo hamburger:</label>
+        <input  id="burger-name"type="text" name="" value="" placeholder="myAwesomeBurger">
+
+        <h2>Ingredients</h2>
+        <div class="ingredients-container">
+          <label for="">Cheese</label>
+          <input type="checkbox" name="" value="5">
+          <label for="">Egg</label>
+          <input type="checkbox" name="" value="10">
+          <label for="">Mustard</label>
+          <input type="checkbox" name="" value="2">
+          <label for="">Tomato</label>
+          <input type="checkbox" name="" value="5">
+          <label for="">Lettuce</label>
+          <input type="checkbox" name="" value="3">
+          <label for="">Ketchup</label>
+          <input type="checkbox" name="" value="4">
+        </div>
+        <label for="">Discount Coupon</label>
+        <input type="text" name="" value="">
+        <div class="">
+          <input id="button-submit" type="button" name="" value="Calculate">
+        </div>
+      </main>
+    </div>
+    <footer><h2>Your Price</h2><div class="total">$<span id="total-insert"></span></div></footer>
+
+
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
