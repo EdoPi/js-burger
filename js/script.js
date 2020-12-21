@@ -23,6 +23,7 @@ OPPURE calcolare senza discount.
 */
 
 document.getElementById("button-submit").addEventListener("click", function() {
+
   yourPrice = 50;
   elementsCounter = 0;
 
@@ -34,11 +35,11 @@ document.getElementById("button-submit").addEventListener("click", function() {
   }
 
   if (elementsCounter < 2 && burgerName.value === '') {
-    alert ('devi prima dare un nome al tuo hamburger e scegliere almeno due ingredienti');
+    alert ('ALERT!!!\n- Devi prima dare un nome al tuo hamburger; \n- Devi scegliere almeno due ingredienti.');
   } else if (burgerName.value === '' ) {
-    alert (' devi inserire il nome del tuo hamburger')
+    alert ('ALERT!!!\n- Devi prima dare un nome al tuo hamburger.')
   } else if (elementsCounter < 2) {
-    alert ('devi selezionare almeno due ingredienti')
+    alert ('ALERT!!!\n- Devi selezionare almeno due ingredienti.')
   } else{
     for (var i = 0; i < discountCodes.length; i++) {
       if (discountCodes[i] === inputDiscount.value) {
@@ -50,20 +51,4 @@ document.getElementById("button-submit").addEventListener("click", function() {
       }
     }
   }
-
-
-
-
-
-
-
 });
-/*for (var i = 0; i < discountCodes.length; i++) {
-  if (discountCodes[i] === inputDiscount.value) {
-    discountApply = true
-  }
-}*/
-
-/*if (burgerName.value === '') {
-  alert ('Devi inserire il nome del tuo hamburger');
-}*/
