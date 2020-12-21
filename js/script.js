@@ -7,7 +7,9 @@
 var yourPrice = 50;
 var elements = document.getElementsByClassName('ingredients-container')[0].getElementsByTagName('input');
 var burgerName = document.getElementById('burger-name');
-var discountCodes = ['pippo', 'franco', 'pdor', 'kmer'];
+var discountCodes = ['pippo', 'jonh', 'pdor', 'kmer'];
+var percDiscount = 0.20;
+
 /*
 creo un listener che quando clicco esegue:
 - creo il reset del prezzo
@@ -22,6 +24,23 @@ document.getElementById("button-submit").addEventListener("click", function() {
 
   if (burgerName.value === '') {
     alert ('Devi inserire il nome del tuo hamburger');
+  } else {
+    for (var i = 0; i < discountCodes.length; i++) {
+      if (discountCodes[i] === discountCodes[i]) {
+
+
+        for (var i = 0; i < elements.length; i++) {
+          if (elements[i].checked === true) {
+            console.log(elements[i]);
+            yourPrice += parseInt(elements[i].value);
+            console.log(yourPrice);
+
+          }
+        }
+
+      }
+    }
+
   }
 
 
