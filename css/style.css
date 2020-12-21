@@ -3,20 +3,128 @@
     margin:0;
     padding:0;
 }
- header{
-   margin-bottom: 30px;
- }
+
 .clearfix::after{
   content: "";
   display: table;
   clear: both;
 }
 
-
-.my-container{
-  margin-left: 30px;
+.my-wrapper{
+  width: 1400px;
+  margin: 0 auto;
+  background-color: #FFF3E0;
 }
 
-.ingredients-container > input {
-  margin: 0 15px 0 5px;
+.my-container{
+}
+
+.color-pink {
+  color: #CC1751;
+}
+
+
+/* Header*/
+header{
+  width: 1300px;
+  height: 100px;
+  background-color: #FCB14C;
+  padding-left: 30px;
+}
+
+h1{
+  padding-top: 50px;
+}
+
+/* main corp*/
+main{
+  width: 1300px;
+  padding-top: 50px;
+  padding-left: 30px;
+  background-color: white;
+}
+
+#burger-name{
+  font-size: 30px;
+  border: 0;
+  margin-bottom: 30px;
+}
+
+#burger-name:focus{
+  outline: 0
+}
+
+main > h2{
+  margin-bottom: 30px;
+}
+.ingredients-container{
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.ingredients-container > ul {
+  list-style-type: none;
+  vertical-align: middle;
+}
+.ingredients-container  li{
+ padding-top: 30px;
+}
+
+
+.ingredients {
+  color: #CC1751 ;
+}
+
+#input-discount{
+width: 900px;
+height: 25px;
+border: 0;
+background-color: #FFF3E0;
+border-radius: 5px;
+margin-left: 10px;
+}
+
+#input-discount:focus{
+  outline: 0
+}
+
+.submit{
+  margin-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#button-submit{
+  font-weight:bold;
+  font-size: 20px;
+  border: 0;
+  height: 50px;
+  width: 150px;
+  background-color: #FCB14C;
+  border-radius: 5px;
+}
+
+footer{
+  width: 1300px;
+  height: 100px;
+  background-color: #CC1751;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  color: white;
+  font-weight: bold;
+}
+
+footer h2{
+  font-size: 25px;
+  padding-left: 30px;
+}
+.total{
+  font-size: 26px;
+}
+#total-insert{
+  font-size: 26px;
+  padding-right: 30px;
 }
