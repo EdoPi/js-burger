@@ -11,12 +11,13 @@
 }
 
 .my-wrapper{
-  width: 1400px;
+  width: 900px;
   margin: 0 auto;
   background-color: #FFF3E0;
 }
 
 .my-container{
+
 }
 
 .color-pink {
@@ -25,20 +26,33 @@
 
 
 /* Header*/
+body{
+  background-color: #FFF5E3;
+  font-family: 'Montserrat', sans-serif;
+}
+
 header{
-  width: 1300px;
+  position: relative;
   height: 100px;
   background-color: #FCB14C;
   padding-left: 30px;
 }
 
 h1{
-  padding-top: 50px;
+  font-size: 50px;
+  padding-top: 30px;
+}
+
+header img {
+  position: absolute;
+  width: 150px;
+  right: -30px;
+  top: -30px;
 }
 
 /* main corp*/
 main{
-  width: 1300px;
+  height: calc(100vh - 200px);
   padding-top: 50px;
   padding-left: 30px;
   background-color: white;
@@ -57,32 +71,43 @@ main{
 main > h2{
   margin-bottom: 30px;
 }
+
+
 .ingredients-container{
-  width: 800px;
+  width: 80%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .ingredients-container > ul {
   list-style-type: none;
   vertical-align: middle;
 }
 .ingredients-container  li{
- padding-top: 30px;
+  width: 200px;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
 }
 
+.ingredients-container > ul > li > img{
+  width: 60px;
+}
 
 .ingredients {
   color: #CC1751 ;
 }
 
 #input-discount{
-width: 900px;
+width: 75%;
 height: 25px;
 border: 0;
 background-color: #FFF3E0;
 border-radius: 5px;
 margin-left: 10px;
+font-size: 15px;
 }
 
 #input-discount:focus{
@@ -90,8 +115,7 @@ margin-left: 10px;
 }
 
 .submit{
-  margin-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
@@ -100,14 +124,13 @@ margin-left: 10px;
   font-weight:bold;
   font-size: 20px;
   border: 0;
-  height: 50px;
+  height: 60px;
   width: 150px;
   background-color: #FCB14C;
   border-radius: 5px;
 }
 
 footer{
-  width: 1300px;
   height: 100px;
   background-color: #CC1751;
   display: flex;

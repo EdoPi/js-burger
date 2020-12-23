@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Create Your Burger</title>
@@ -12,6 +14,7 @@
     <div class="my-wrapper">
       <header>
         <h1>Create Your Burger</h1>
+        <img src="img/burger-top.png" alt="">
       </header>
 
       <main>
@@ -21,30 +24,53 @@
         <div class="ingredients-container">
 
           <ul>
-            <li><label for="">Cheese</label>
-            <input class"ingredients" type="checkbox" name="" value="5"><span class="color-pink"> add</span></li>
+            <li>
+              <img src="img/cheese.svg" alt="">
+              <label for="">Cheese</label>
+              <input class"ingredients" type="checkbox" name="" value="5"><span class="color-pink"> add</span>
+            </li>
 
-            <li><label for="">Egg</label>
-            <input class"ingredients" type="checkbox" name="" value="10"><span class="color-pink"> add</span></li>
+            <li>
+              <img src="img/fried-egg.svg" alt="">
+              <label for="">Egg</label>
+              <input class"ingredients" type="checkbox" name="" value="10"><span class="color-pink"> add</span>
+            </li>
 
-            <li><label for="">Mustard</label>
-            <input class"ingredients" type="checkbox" name="" value="2"><span class="color-pink"> add</span></li>
+            <li>
+              <img src="img/mustard.svg" alt="">
+              <label for="mustard">Mustard</label>
+              <input id="mustard" class"ingredients" type="checkbox" name="" value="2"><span class="color-pink"> add</span>
+
+            </li>
+
           </ul>
 
 
           <ul>
-            <li><label for="">Tomato</label>
-            <input class"ingredients" type="checkbox" name="" value="5"><span class="color-pink"> add</span></li>
-            <li><label for="">Lettuce</label>
-            <input class"ingredients" type="checkbox" name="" value="3"><span class="color-pink"> add</span></li>
-            <li><label for="">Ketchup</label>
-            <input class"ingredients" type="checkbox" name="" value="4"><span class="color-pink"> add</span></li>
+            <li>
+              <img src="img/tomato.svg" alt="">
+              <label for="">Tomato</label>
+              <input class"ingredients" type="checkbox" name="" value="5"><span class="color-pink"> add</span>
+            </li>
+
+            <li>
+              <img src="img/lettuce.svg" alt="">
+              <label for="">Lettuce</label>
+              <input class"ingredients" type="checkbox" name="" value="3"><span class="color-pink"> add</span>
+            </li>
+
+            <li>
+              <img src="img/ketchup.svg" alt="">
+              <label for="">Ketchup</label>
+              <input class"ingredients" type="checkbox" name="" value="4"><span class="color-pink"> add</span>
+            </li>
+
           </ul>
 
         </div>
 
         <label for="">Discount Coupon</label>
-        <input id="input-discount" type="text" name="" value="">
+        <input id="input-discount" type="text" name="" value="" placeholder='discount code'>
 
         <div class="submit">
           <input id="button-submit" type="button" name="" value="calculate">
